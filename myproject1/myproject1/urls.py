@@ -28,3 +28,4 @@ urlpatterns = [
     #path('', include('myapp1.urls')),
 ]
 
+#path('', include('myapp1.urls')),
