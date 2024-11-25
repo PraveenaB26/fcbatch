@@ -1,0 +1,15 @@
+<h1>Submitted data is</h1>
+<h1>Persons</h1>
+<table>
+    <tr>  <td>Name </td> <td> Age </td> <td>Actions</td></tr>
+    {% for person in persons %}
+    <tr>
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+        <td> 
+            <a href="{% url 'update' person.name person.age %}">Update</a> </td>
+        <td>
+            <a href="{% url 'delete' person.name person.age %}">Delete </a> </td>
+    </tr>
+    {% endfor %}
+</table>
